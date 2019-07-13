@@ -2,7 +2,7 @@ import ConfigParser
 import os
 import unittest
 
-from .client import Moxtra
+from . import Moxtra
 
 
 parser = ConfigParser.ConfigParser()
