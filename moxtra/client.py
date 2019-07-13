@@ -8,7 +8,7 @@ import requests
 from uuid import uuid4
 
 
-class Client:
+class Moxtra:
     endpoint = "https://apisandbox.moxtra.com/oauth/token"
     def __init__(self, client_id,
                  client_secret,

@@ -2,7 +2,7 @@ import ConfigParser
 import os
 import unittest
 
-from .client import Client
+from .client import Moxtra
 
 
 parser = ConfigParser.ConfigParser()
@@ -14,12 +14,12 @@ client_details = parser.items('local')
 client_id = client_details[0][1]
 client_secret = client_details[1][1]
 
-cl = Client(client_id, client_secret)
+cl = Moxtra(client_id, client_secret)
 
 
 class TestMoxtraApi(unittest.TestCase):
     def setUp(self):
-        self.moxtra_client = Client(
+        self.moxtra_client = Moxtra(
             client_id,
             client_secret)
 
